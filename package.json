@@ -1,0 +1,22 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Friend Finder application. Node with Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericjosprice/Friend-Finder.git"
+  },
+  "author": "Eric Price",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericjosprice/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/ericjosprice/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
