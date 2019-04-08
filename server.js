@@ -1,24 +1,23 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-
-
 var PORT =  process.env.PORT || 3000;
 
 
 // Sets up the Express app to handle data parsing
+//Eric says this is used to take in form data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//get home.html when the domain is called
-app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname, "app/public/home.html"));
 
-});
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+// ================================================================================
 
-
-
-
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // Starts the server to begin listening
 // =============================================================
