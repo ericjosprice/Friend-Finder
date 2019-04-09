@@ -28,7 +28,7 @@ module.exports = function (app) {
         }
         oNewFriend.nScore = nScore;
 
-//=================================
+        //=================================
 
         // Note the code here. Our "server" will respond to a user"s survey result
         // Then compare those results against every user in the database.
@@ -42,7 +42,7 @@ module.exports = function (app) {
         var bestMatch = {
             name: "",
             imageURL: "",
-            friendDifference: 100
+            friendDifference: 0
         };
 
         // Here we take the result of the user"s survey POST and parse it.
@@ -83,7 +83,7 @@ module.exports = function (app) {
         res.json(bestMatch);
 
 
-// =============================================
+        // =============================================
 
     });
 
