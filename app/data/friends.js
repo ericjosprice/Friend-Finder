@@ -7,17 +7,23 @@
 aFriendsArray = [{
         name: "Eric",
         imageURL: "https://static.boredpanda.com/blog/wp-content/uploads/2018/10/cutest-puppy-dog-pictures-coverimage.jpg",
-        a1: 5,
-        a2: 1,
-        a3: 1,
-        a4: 1,
-        a5: 1,
-        a6: 1,
+        scores: [5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+        ],
+        nScore: 14,
     },
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [
+        name: "Shelby",
+        imageURL: "https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        scores: [
             5,
             1,
             4,
@@ -28,7 +34,25 @@ aFriendsArray = [{
             5,
             4,
             1
-        ]
+        ],
+        nScore: 32,
+    },
+    {
+        name: "julius",
+        imageURL: "https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        scores: [
+            5,
+            3,
+            3,
+            2,
+            3,
+            2,
+            2,
+            3,
+            2,
+            1
+        ],
+        nScore: 26,
     },
 ];
 

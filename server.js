@@ -5,7 +5,7 @@ var PORT =  process.env.PORT || 3000;
 
 
 // Sets up the Express app to handle data parsing
-//Eric says this is used to take in form data
+//Eric says express uses this code to take in form data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
