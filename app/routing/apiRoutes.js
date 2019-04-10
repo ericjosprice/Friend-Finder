@@ -42,7 +42,7 @@ module.exports = function (app) {
         var bestMatch = {
             name: "",
             imageURL: "",
-            friendDifference: 0
+            friendDifference: 1000
         };
 
         // Here we take the result of the user"s survey POST and parse it.
@@ -81,10 +81,12 @@ module.exports = function (app) {
         aFriendsArray.unshift(oNewFriend);
         // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
         res.json(bestMatch);
+        console.log("best match is:")
+        console.log(bestMatch)
 
 
         // =============================================
-
+// when the bestmastch is returned, do the numbers add up correctly. does the difference add up to what's in the object
     });
 
 }
